@@ -1,3 +1,5 @@
+spring:
+  profiles: alpha
 zuul:
   routes:
     member:
