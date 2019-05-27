@@ -17,8 +17,23 @@ public class ContentsController {
     @Value("${spring.message}")
     private String message;
 
-    @GetMapping("/contents/detail")
-    public String contents() {
-        return "Contents Detail - Port " + port + " - " + message;
+    @GetMapping("/member/detail")
+    public String member() {
+        return "Member Detail - Port " + port + " - " + message;
+    }
+
+    @GetMapping("/pay/detail")
+    public String pay() {
+        return "Pay Detail - Port " + port + " - " + message;
+    }
+
+    @GetMapping("/comment")
+    public String comment() {
+        return "Comment - Port " + port + " - " + message;
+    }
+
+    @GetMapping("/board")
+    public String userDetail() {
+        return "Board - Port " + port + " - " + message;
     }
 }

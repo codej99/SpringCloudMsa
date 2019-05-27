@@ -21,4 +21,9 @@ public class MemberController {
     public String member() {
         return "Member Detail - Port " + port + " - " + message;
     }
+
+    @GetMapping("/pay/detail")
+    public String pay() {
+        return "Pay Detail - Port " + port + " - " + message;
+    }
 }
