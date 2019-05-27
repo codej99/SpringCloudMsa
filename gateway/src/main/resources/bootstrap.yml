@@ -1,0 +1,12 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: zuul-gateway
+  profiles:
+    active: local
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
