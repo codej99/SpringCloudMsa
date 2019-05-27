@@ -1,0 +1,9 @@
+spring:
+  profile: local
+  cloud:
+    config:
+      server:
+        native: # 서버 실행시 profile 설정시 native를 지정해야 적용됩니다.
+#          search-locations: file:///${user.home}/server-configs # window - C:\Users\계정명\server-configs
+          search-locations: file://${user.home}/server-configs # mac, linux
+          #search-locations: classpath:/server-configs

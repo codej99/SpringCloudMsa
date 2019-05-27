@@ -1,0 +1,3 @@
+spring:
+  profiles: local
+  message: Hello Spring MemberService Local Server!!!!!

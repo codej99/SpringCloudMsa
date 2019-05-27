@@ -1,0 +1,3 @@
+spring:
+  profiles: local
+  message: Hello Spring ContentsService Local Server!!!!!
