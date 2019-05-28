@@ -5,8 +5,7 @@ spring:
     name: eureka-discovery
   profiles:
     active: local
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
