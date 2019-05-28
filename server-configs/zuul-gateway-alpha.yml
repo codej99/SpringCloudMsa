@@ -14,3 +14,10 @@ zuul:
       stripPrefix: false
       path: /v1/**
       url: http://localhost:8081
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
