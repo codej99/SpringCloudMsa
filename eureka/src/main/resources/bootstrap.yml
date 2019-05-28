@@ -1,12 +1,12 @@
 server:
-  port: 9100
+  port: 8761
 spring:
   application:
-    name: zuul-gateway
+    name: eureka-discovery
   profiles:
     active: local
 management:
   endpoints:
     web:
       exposure:
-        include: routes, refresh
+        include: refresh

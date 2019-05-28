@@ -1,0 +1,6 @@
+spring:
+  profiles: alpha
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false

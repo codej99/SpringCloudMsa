@@ -2,5 +2,8 @@ spring:
   profiles: local
   cloud:
     config:
-      uri: http://localhost:9000
+      #uri: http://localhost:9000
       fail-fast: true
+      discovery:
+        service-id: config-service
+        enabled: true

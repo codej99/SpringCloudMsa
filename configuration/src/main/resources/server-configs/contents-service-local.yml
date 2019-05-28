@@ -1,3 +1,10 @@
 spring:
   profiles: local
   message: Hello Spring ContentsService Local Server!!!!!
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true

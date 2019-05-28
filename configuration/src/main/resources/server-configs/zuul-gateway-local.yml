@@ -1,0 +1,27 @@
+spring:
+  profiles: local
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    enabled: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+zuul:
+  routes:
+    member:
+      stripPrefix: false
+      path: /v1/member/**
+#      url: http://localhost:8080
+      serviceId: member-service
+    pay:
+      stripPrefix: false
+      path: /v1/pay/**
+#      url: http://localhost:8081
+      serviceId: contents-service
+    else:
+      stripPrefix: false
+      path: /v1/**
+#      url: http://localhost:8081
+      serviceId: contents-service
