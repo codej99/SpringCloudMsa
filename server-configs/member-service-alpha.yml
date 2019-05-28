@@ -1,3 +1,10 @@
 spring:
   profiles: alpha
   message: Hello Spring MemberService Alpha Server!!!!!
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
