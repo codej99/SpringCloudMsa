@@ -16,3 +16,5 @@ management:
     web:
       exposure:
         include: shutdown,info
+user:
+  password: '{cipher}AQBFtSUXeOe9bgCOlU8k/LTWu+/R+jTsU1LaPURGuyLPh4S0eqa+dB9iciWEc67d5al4QCMO4JAcAboD3z26qd6kwhuKW0mnkJ6rJRpsi4xRitS0l6BZpIp4lBayyXdNYdeuKX8/8uWoLtN8x2KTGSlGAotS/XLOhJJFRV9wUeOLWRu1/JsGUns8fLDANLXI+YjIxTgGy2Fn706cBnZOcVSsAKo5Cwszzy0dr7aUYbVBn8X1uM0irVSLAHXaZb8TXCJ4vkFnhzUBxQLcLncsxg15p0lsSD6Rfsd9hXseSgUtrPWDslFaBGVHrW2k2lMo/40YPyrVwiqGFFCVzai9QKGa88W6PF1QYQ/xngF2+c8631G5c0PmpvngsruYMGp/J4Q='
