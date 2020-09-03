@@ -6,6 +6,11 @@ spring:
     active: native,local
   application:
     name: config-service
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
 eureka:
   client:
     enabled: true
@@ -13,3 +18,10 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     preferIpAddress: true
+encrypt:
+  key-store:
+    location: classpath:/config-server.jks
+    password: storepass123
+    alias: config-server-key
+    secret: keypass123
+
