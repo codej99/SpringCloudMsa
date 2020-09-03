@@ -1,3 +1,8 @@
+![Java_8](https://img.shields.io/badge/java-v1.8-red?logo=java)
+![Spring_Boot](https://img.shields.io/badge/Spring_Boot-v2.1.5-green.svg?logo=spring)
+![Spring_Cloud](https://img.shields.io/badge/Spring_Cloud-v2.1.1-green.svg?logo=spring)
+![GitHub stars](https://img.shields.io/github/stars/codej99/SpringOauth2AuthorizationServer?style=social)
+
 # Spring Cloud 알아보기
 Spring Cloud MicroService Architechture
 
